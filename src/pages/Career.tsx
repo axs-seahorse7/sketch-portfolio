@@ -4,7 +4,7 @@ import { timeline } from '../data/content';
 
 export function Career() {
   return (
-    <PageShell eyebrow="Career" title="A timeline drawn as the path grows." description="A scalable professional timeline that can receive future entries without changing the design system.">
+    <PageShell eyebrow="Career" title="My Professional Journey" description="A visual journey through my career, highlighting key milestones, projects, and growth as a software engineer. Each point on the timeline represents a significant chapter in my professional development." >
       <div className="relative mx-auto max-w-4xl">
         <motion.div className="absolute left-5 top-0 h-full w-px bg-graphite/20 dark:bg-white/20 md:left-1/2" initial={{ scaleY: 0 }} animate={{ scaleY: 1 }} transition={{ duration: 1.1, ease: 'easeOut' }} style={{ transformOrigin: 'top' }} />
         <div className="space-y-10">

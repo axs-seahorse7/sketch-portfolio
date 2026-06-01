@@ -11,11 +11,10 @@ export function Navbar() {
 
   return (
     <header className="fixed left-1/2 top-5 z-40 w-[85vw] -translate-x-1/2">
-      <nav className="glass-nav relative overflow-hidden rounded-full border border-white/55 bg-white/45 px-4 py-3 shadow-glass backdrop-blur-2xl dark:border-white/10 dark:bg-ink/42">
-        <div className="pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-55 blur-sm animate-glassSweep dark:via-white/20" />
+      <nav className={`relative overflow-hidden rounded-full ${open ? "max-sm:rounded-2xl" : ""} border border-white/75 bg-gradient-to-br from-white/55 via-white/30 to-white/15 px-4 py-3 shadow-[0_2px_4px_rgba(255,255,255,0.9),0_8px_40px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.9),inset_0_-1px_0_rgba(0,0,0,0.05)] backdrop-blur-[40px] saturate-[1.8] dark:border-white/[0.06] dark:from-white/[0.08] dark:via-white/[0.04] dark:to-transparent dark:shadow-[0_8px_40px_rgba(0,0,0,0.6),inset_0_1px_0_rgba(255,255,255,0.06)] dark:saturate-100`}>
         <div className="relative flex items-center justify-between gap-4">
           <NavLink to="/" className="whitespace-nowrap font-hand text-3xl text-ink dark:text-white" onClick={() => setOpen(false)}>
-            Sketch Engineer
+            Software Engineer
           </NavLink>
           <div className="hidden items-center gap-1 xl:flex">
             {navItems.map((item) => (

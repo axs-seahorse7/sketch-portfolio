@@ -51,9 +51,11 @@ export function Doodle({ className = '' }: { className?: string }) {
   );
 }
 
-export function ProjectMockup({ title }: { title: string }) {
+export function ProjectMockup({ title, screenshot }: { title: string; screenshot: any }) {
   return (
     <div className="relative min-h-64 overflow-hidden rounded-[1.5rem] border border-line bg-ivory p-5 dark:border-white/10 dark:bg-white/5">
+     { !screenshot && (
+      <>
       <div className="mb-5 flex gap-2">
         <span className="h-3 w-3 rounded-full border border-graphite/30 dark:border-white/30" />
         <span className="h-3 w-3 rounded-full border border-graphite/30 dark:border-white/30" />
@@ -68,6 +70,12 @@ export function ProjectMockup({ title }: { title: string }) {
         <div className="h-4 w-full rounded-full bg-line dark:bg-white/10" />
         <div className="h-4 w-2/3 rounded-full bg-line dark:bg-white/10" />
       </div>
+      </>
+      )}
+      
+    { screenshot && (
+      <img src={screenshot} alt={`${title} screenshot`} className="absolute inset-0 h-full w-full object-cover opacity-0" onLoad={(e) => (e.currentTarget.style.opacity = '1')} />
+    )}
       <p className="absolute bottom-5 right-6 rotate-[-3deg] font-hand text-3xl text-graphite/50 dark:text-white/45">{title}</p>
     </div>
   );

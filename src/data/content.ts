@@ -22,44 +22,43 @@ export const skills: Array<{ title: string; icon: LucideIcon; items: string[] }>
 
 export const projects = [
   {
-    name: 'Foundry Commerce OS',
-    company: 'Independent Product Lab',
-    description: 'A modular commerce dashboard for founders to manage inventory, orders, analytics, and customer workflows from one focused workspace.',
-    stack: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
-    url: 'https://example.com/foundry-commerce',
+    name: 'Vehicle Entry Management System',
+    title: 'VEMS Dashboard',
+    company: 'PG Technoplast Ltd',
+    description: 'A secure and efficient system for managing vehicle entries, integrating real-time monitoring, access control, and reporting features to streamline operations.',
+    stack: ['React', 'JavaScript', 'Node.js', 'MongoDB', 'AWS'],
+    url: 'https://vems-client.vercel.app/',
     github: 'https://github.com/example/foundry-commerce',
+    screenshot: '/Project-ss/vems-dashbaord.png',
   },
   {
-    name: 'Atlas Workflow Engine',
-    company: 'Studio Systems',
-    description: 'A business automation platform that transforms repeated operational tasks into traceable, reusable workflows with role-based controls.',
-    stack: ['React', 'Express.js', 'REST APIs', 'Docker'],
-    url: 'https://example.com/atlas-workflow',
+    name: 'Field Failure Analysis Tool',
+    title: 'FFR Dashboard',
+    company: 'PG Technoplast Ltd',
+    description: 'A comprehensive dashboard for analyzing field failure reports, providing insights into failure patterns, root causes, and actionable recommendations to improve product reliability.',
+    stack: ['React', 'Express.js', 'REST APIs', 'AWS', 'MongoDB'],
+    url: 'https://ffcs-field-failure-complaint-system-ten.vercel.app/',
     github: 'https://github.com/example/atlas-workflow',
+    screenshot: "/Project-ss/FFR-Dashboard.png",
   },
   {
-    name: 'Northstar Client Portal',
-    company: 'Consulting Practice',
-    description: 'A polished client portal for project updates, document exchange, milestones, and delivery visibility across active engagements.',
-    stack: ['TypeScript', 'AWS', 'MySQL', 'Nginx'],
+    name: 'CRM System for Sales and Support',
+    title: 'CRM Platform',
+    company: 'My Project',
+    description: 'A custom CRM platform designed to manage customer relationships, track sales pipelines, and provide support ticketing, enhancing customer engagement and operational efficiency.',
+    stack: ['Node.js', 'Express.js', 'React', 'MongoDB', 'AWS'],
     url: 'https://example.com/northstar-portal',
+    screenshot: '/Project-ss/CRM.png',
   },
-  {
-    name: 'Signal Architecture Notes',
-    company: 'Personal Research',
-    description: 'A living knowledge base that documents software architecture decisions, tradeoffs, deployment patterns, and reusable engineering notes.',
-    stack: ['React', 'Markdown', 'GitHub', 'Linux'],
-    url: 'https://example.com/signal-notes',
-    github: 'https://github.com/example/signal-notes',
-  },
+  
 ];
 
 export const timeline = [
-  { date: '2019', role: 'Education', organization: 'Computer Science Foundations', description: 'Built the foundation in programming, data structures, and the discipline of thinking through systems before implementation.' },
-  { date: '2020', role: 'Learning Phase', organization: 'Self-Guided Modern Web Study', description: 'Learned modern JavaScript, React, APIs, databases, deployment workflows, and the habit of shipping small complete products.' },
-  { date: '2021', role: 'First Professional Experience', organization: 'Product-Focused Engineering Teams', description: 'Started solving real business problems by turning requirements into stable, maintainable full-stack application features.' },
-  { date: '2023', role: 'Major Projects', organization: 'Client and Internal Platforms', description: 'Delivered dashboards, portals, workflow systems, and architecture improvements with a focus on clarity and long-term maintainability.' },
-  { date: 'Now', role: 'Current Position', organization: 'Software Engineer and Product Builder', description: 'Building scalable digital products while deepening expertise in architecture, cloud systems, and practical product development.' },
+  { date: '2022', role: 'Education', organization: 'Computer Science & Engineering', description: 'Built the foundation in programming, data structures, and the discipline of thinking through systems before implementation.' },
+  { date: '2024', role: 'Learning Phase', organization: 'Self-Guided Modern Web Study', description: 'Learned modern JavaScript, React, APIs, databases, deployment workflows, and the habit of shipping small complete products.' },
+  { date: '2025', role: 'First Professional Experience - BanksterIndia pvt Ltd ', organization: 'Start Internship at BanksterIndia pvt Ltd', description: 'Started solving real business problems by turning requirements into stable, maintainable full-stack application features.' },
+  { date: '2026', role: 'PG Technoplast Ltd', organization: 'Joined PG Technoplast and move to solving Real-World Problems', description: 'Delivered dashboards, portals, workflow systems, and architecture improvements with a focus on clarity and long-term maintainability.' },
+  { date: "Now", role: 'Current Position', organization: 'Software Engineer and Product Designer', description: 'Building scalable digital products while deepening expertise in architecture, cloud systems, and practical product development.' },
   { date: 'Next', role: 'Future Milestones', organization: 'Architecture and Product Leadership', description: 'Growing toward larger system ownership, stronger product judgment, and software that compounds value over time.' },
 ];
 
@@ -78,9 +77,9 @@ export const achievements = [
 ];
 
 export const contactLinks = [
-  { label: 'Email', value: 'hello@sketchengineer.dev', href: 'mailto:hello@sketchengineer.dev', icon: Mail },
-  { label: 'LinkedIn', value: 'linkedin.com/in/sketchengineer', href: 'https://linkedin.com', icon: BriefcaseBusiness },
-  { label: 'GitHub', value: 'github.com/sketchengineer', href: 'https://github.com', icon: GitBranch },
+  { label: 'Email', value: 'sonukrdas1754@gmail.com', href: 'mailto:sonukrdas1754@gmail.com', icon: Mail },
+  { label: 'LinkedIn', value: 'linkedin.com/in/sonu-kumar-das-linked-in', href: 'https://www.linkedin.com/in/sonu-kumar-das-linked-in', icon: BriefcaseBusiness },
+  { label: 'GitHub', value: 'github.com/axs-seahorse7', href: 'https://github.com/axs-seahorse7', icon: GitBranch },
   { label: 'Resume Download', value: 'Download PDF resume', href: '/resume.pdf', icon: Award },
 ];
 

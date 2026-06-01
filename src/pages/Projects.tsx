@@ -4,12 +4,12 @@ import { projects } from '../data/content';
 
 export function Projects() {
   return (
-    <PageShell eyebrow="Projects" title="Premium showcases on paper cards." description="Placeholder projects designed to scale into a larger portfolio with pagination-ready structure and consistent project metadata.">
+    <PageShell eyebrow="Projects" title="Showcasing My Work" description="Explore a curated selection of my projects, each reflecting my dedication to crafting innovative solutions and pushing the boundaries of technology. From web applications to mobile experiences, these projects highlight my skills in design, development, and problem-solving. Dive in to see how I bring ideas to life through code and creativity." className="mt-12">
       <div className="grid gap-7">
         {projects.map((project, index) => (
           <a key={project.name} href={project.url} target="_blank" rel="noreferrer" className="block">
             <SketchCard className="grid gap-7 lg:grid-cols-[.92fr_1.08fr]">
-              <ProjectMockup title={`0${index + 1}`} />
+              <ProjectMockup title={project.title} screenshot={project.screenshot} />
               <div className="flex flex-col justify-center">
                 <p className="text-sm font-semibold uppercase tracking-[0.25em] text-graphite/45 dark:text-white/45">{project.company}</p>
                 <h2 className="mt-3 font-hand text-5xl text-ink dark:text-white">{project.name}</h2>
@@ -27,7 +27,7 @@ export function Projects() {
         ))}
       </div>
       <div className="mt-8 flex justify-center gap-3">
-        {[1, 2].map((page) => <button key={page} className={`h-11 w-11 rounded-full border text-sm font-semibold ${page === 1 ? 'border-ink bg-ink text-white dark:border-white dark:bg-white dark:text-ink' : 'border-graphite/15 text-graphite dark:border-white/15 dark:text-white/65'}`}>{page}</button>)}
+        {[1].map((page) => <button key={page} className={`h-11 w-11 rounded-full border text-sm font-semibold ${page === 1 ? 'border-ink bg-ink text-white dark:border-white dark:bg-white dark:text-ink' : 'border-graphite/15 text-graphite dark:border-white/15 dark:text-white/65'}`}>{page}</button>)}
       </div>
     </PageShell>
   );
