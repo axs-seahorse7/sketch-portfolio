@@ -32,7 +32,7 @@ export function Home() {
       <section className="relative mx-auto w-full max-w-lg">
         <motion.div className="relative rotate-[-2.5deg] rounded-[2rem] border border-graphite/15 bg-white p-5 shadow-paper dark:border-white/15 dark:bg-graphite dark:shadow-darkpaper" initial={{ y: 24, rotate: -5, opacity: 0 }} animate={{ y: 0, rotate: -2.5, opacity: 1 }} transition={{ duration: 0.65, ease: 'easeOut' }}>
           <div className="sketch-border overflow-hidden rounded-[1.4rem] bg-ivory p-7 dark:bg-ink">
-            <div className="relative aspect-[4/5] rounded-[1.1rem] border border-graphite/10 bg-white dark:border-white/10 dark:bg-white/5">
+            <div className="relative aspect-[4/5] rounded-[1.1rem] border border-graphite/10 bg-white dark:border-white/10 dark:bg-white/5 overflow-hidden">
             <img src={`/${theme === 'dark' ? 'raw-profile' : 'sketch-profile'}.jpeg`} alt="Portrait of me" className="h-full w-full object-cover" />
             </div>
             <div className="mt-5 flex items-end justify-between gap-4">
