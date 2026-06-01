@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Kalam:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Manrope, 'DM Sans', sans-serif;
+  color: #111111;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(138, 152, 168, 0.25);
+}
+
+.sketch-border::before,
+.sketch-border::after {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  pointer-events: none;
+  border: 1.5px solid rgba(34, 34, 34, 0.24);
+  border-radius: inherit;
+  transform: rotate(-0.35deg);
+}
+
+.sketch-border::after {
+  inset: 11px 6px 5px 10px;
+  border-color: rgba(34, 34, 34, 0.12);
+  transform: rotate(0.45deg);
+}
+
+.dark .sketch-border::before {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.dark .sketch-border::after {
+  border-color: rgba(255, 255, 255, 0.13);
+}
+
+.glass-nav {
+  isolation: isolate;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(34, 34, 34, 0.42);
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
