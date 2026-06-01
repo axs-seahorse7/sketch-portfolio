@@ -4,7 +4,8 @@ import { projects } from '../data/content';
 
 export function Projects() {
   return (
-    <PageShell eyebrow="Projects" title="Showcasing My Work" description="Explore a curated selection of my projects, each reflecting my dedication to crafting innovative solutions and pushing the boundaries of technology. From web applications to mobile experiences, these projects highlight my skills in design, development, and problem-solving. Dive in to see how I bring ideas to life through code and creativity." className="mt-12">
+    <PageShell eyebrow="Projects" title="Showcasing My Work" description="Explore a curated selection of my projects, each reflecting my dedication to crafting innovative solutions and pushing the boundaries of technology. From web applications to mobile experiences, these projects highlight my skills in design, development, and problem-solving. Dive in to see how I bring ideas to life through code and creativity." 
+    >
       <div className="grid gap-7">
         {projects.map((project, index) => (
           <a key={project.name} href={project.url} target="_blank" rel="noreferrer" className="block">
